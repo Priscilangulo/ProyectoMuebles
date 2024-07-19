@@ -1,0 +1,326 @@
+/*reglas generales*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    color: silver;
+    /* box-shadow: black; */
+    background-color: rgb(5, 4, 1);
+    width: "100%";
+    height: 65px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header .parent.menu-option {
+    margin-right: 40px;
+}
+
+.header h1 {
+    margin-left: 40px;
+    display: inline;
+}
+
+.header .item.menu-option {
+    display: inline;
+    margin: 0 20px;
+}
+
+.header .item.menu-option a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .search {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .search input {
+    font-size: 14px;
+    margin-right: 10px;
+    height: 100%;
+    padding-left: 5px;
+}
+
+.header .search button {
+   background-color: transparent;
+   border: 1px solid white;
+   border-radius: 5px;
+   padding: 0px 10px;
+   margin-right: 10px;
+   color: white;
+   cursor: pointer;
+   height: 30px;
+}
+
+.cover {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.cover img {
+    height: 400px;
+    width: 100%;
+}
+
+.cover .title {
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.products.one-column .product {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 70px;
+}
+
+.products.one-column .product .left,
+.products.one-column .product .right {
+    width: 50%;
+}
+
+.products.one-column .product .left img {
+    height: 300px;
+    width: 100%;
+}
+
+.products.one-column .product .right {
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: silver;
+    color: white;
+}
+
+.products.one-column .product .right h3,
+.products.one-column .product .right p,
+.products.one-column .product .right span,
+.products.one-column .product .right button {
+    text-align: center;
+}
+
+.products.one-column .product .right button {
+    width: 150px;
+    align-self: center;
+    margin: 10px 0;
+    margin-top: 25px;
+}
+
+/* DOS COLUMNAS */
+.products.two-column {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.products.two-column .product {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+
+.products.two-column .product .top img {
+    height: 250px;
+    width: 100%;
+}
+
+.products.two-column .product .bottom {
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: silver;
+    color: white;
+}
+
+.products.two-column .product .bottom h3,
+.products.two-column .product .bottom p,
+.products.two-column .product .bottom span,
+.products.two-column .product .bottom button {
+    text-align: center;
+}
+
+.products.two-column .product .bottom button {
+    width: 150px;
+    align-self: center;
+    margin: 10px 0;
+    margin-top: 25px;
+}
+
+/* TRES COLUMNNAS */
+
+.products.three-column {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.products.three-column .product {
+    display: flex;
+    flex-direction: column;
+    /* height: 600px; */
+    width: 33.33%;
+    padding: 20px;
+}
+
+.products.three-column .product .top img {
+    height: 250px;
+    width: 100%;
+}
+
+.products.three-column .product .bottom {
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: silver;
+    color: white;
+}
+
+.products.three-column .product .bottom h3,
+.products.three-column .product .bottom p,
+.products.three-column .product .bottom span,
+.products.three-column .product .bottom button {
+    text-align: center;
+}
+
+.products.three-column .product .bottom button {
+    width: 150px;
+    align-self: center;
+    margin: 10px 0;
+    margin-top: 25px;
+}
+
+/* TRES FILAS */
+
+.products.three-lines {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+}
+
+.products.three-lines .product {
+    display: flex;
+    flex-direction: column;
+    /* height: 600px; */
+    width: 33.3%;
+    padding: 20px;
+}
+
+.products.three-lines .product .top img {
+    height: 350px;
+    width: 100%;
+}
+
+.products.three-lines .product .bottom {
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgray;
+    color: white;
+}
+
+.products.three-lines .product .bottom h3,
+.products.three-lines .product .bottom p,
+.products.three-lines .product .bottom span,
+.products.three-lines .product .bottom button {
+    text-align: center;
+}
+
+/* TRES COLUMNAS FINAL */
+
+footer .main-container{
+    color: silver;
+    background-color: rgb(42, 41, 41);
+    /* background-color: rgb(5, 4, 1); */
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+footer article{
+    width: 33.33%;
+}
+
+footer article ul{
+    padding: 0;
+}
+
+footer h3{
+    color: silver;
+    text-align: center;
+}
+
+footer li{
+    display: flex;
+    justify-content: center;
+}
+
+footer li a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+/* DERECHOS RESERVADOS */
+
+footer section.rigths{
+    background-color: black;
+    color: silver;
+    padding: 20px 0px;
+}
+
+footer section.rigths h5{
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+/** Productos */
