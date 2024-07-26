@@ -1,0 +1,543 @@
+/*reglas generales*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.46);
+    box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.46);
+}
+
+.header {
+    color: silver;
+    background-color: rgb(5, 4, 1);
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header .parent.menu-option {
+    margin-right: 40px;
+}
+
+.header h1 {
+    margin: 0px;
+    margin-left: 40px;
+    display: inline;
+}
+
+.header .item.menu-option {
+    display: inline;
+    margin: 0 20px;
+}
+
+.header .item.menu-option a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .search {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .search input {
+    font-size: 14px;
+    margin-right: 10px;
+    height: 100%;
+    padding-left: 5px;
+    border-radius: 6px;
+    border: none;
+}
+
+.header .search button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+}
+
+.header .mobile.navbar {
+    display: none;
+}
+
+.header .custom-toggler {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    margin-left: auto;
+}
+
+.header .custom-toggler:focus,
+.header .custom-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.header .custom-toggler.active {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.header .custom-toggler .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#navbarNav {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#navbarNav .nav-link {
+    color: white;
+}
+
+#navbarNav .btn-close {
+    filter: invert(1); 
+}
+
+.cover {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.cover img {
+    height: 400px;
+    width: 100%;
+}
+
+.cover .title {
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.products.one-column .product {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 70px;
+}
+
+.products.one-column .product .left,
+.products.one-column .product .right {
+    width: 50%;
+}
+
+.products.one-column .product .left img {
+    height: 300px;
+    width: 100%;
+}
+
+.products.one-column .product .right {
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: silver;
+    color: white;
+}
+
+.products.one-column .product .right h3,
+.products.one-column .product .right p,
+.products.one-column .product .right span,
+.products.one-column .product .right button {
+    text-align: center;
+}
+
+.products.one-column .product .right button {
+    align-self: center;
+    margin: 10px 0;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 15px;
+}
+
+/* DOS COLUMNAS */
+.products.two-column {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.products.two-column .product {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+}
+
+.products.two-column .product .top img {
+    height: 250px;
+    width: 100%;
+}
+
+.products.two-column .product .bottom {
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: silver;
+    color: white;
+}
+
+.products.two-column .product .bottom h3,
+.products.two-column .product .bottom p,
+.products.two-column .product .bottom span,
+.products.two-column .product .bottom button {
+    text-align: center;
+}
+
+.products.two-column .product .bottom button {
+    align-self: center;
+    margin: 10px 0;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+/* TRES COLUMNNAS */
+
+.products.three-column {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.products.three-column .product {
+    display: flex;
+    flex-direction: column;
+    /* height: 600px; */
+    width: 33.33%;
+    margin: 20px;
+}
+
+.products.three-column .product .top img {
+    height: 250px;
+    width: 100%;
+}
+
+.products.three-column .product .bottom {
+    min-height: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: silver;
+    color: white;
+}
+
+.products.three-column .product .bottom h3,
+.products.three-column .product .bottom p,
+.products.three-column .product .bottom span,
+.products.three-column .product .bottom button {
+    text-align: center;
+}
+
+.products.three-column .product .bottom button {
+    align-self: center;
+    margin: 10px 0;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+/* TRES FILAS */
+
+.products.three-lines {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+}
+
+.products.three-lines .product {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.products.three-lines .product .top img {
+    height: 350px;
+    width: 100%;
+}
+
+.products.three-lines .product .bottom {
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgray;
+    color: white;
+}
+
+.products.three-lines .product .bottom h3,
+.products.three-lines .product .bottom p,
+.products.three-lines .product .bottom span,
+.products.three-lines .product .bottom button {
+    text-align: center;
+}
+
+/* TRES COLUMNAS FINAL */
+
+footer .main-container {
+    color: silver;
+    background-color: rgb(42, 41, 41);
+    /* background-color: rgb(5, 4, 1); */
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+footer article {
+    width: 33.33%;
+}
+
+footer article ul {
+    padding: 0;
+}
+
+footer h3 {
+    color: silver;
+    text-align: center;
+}
+
+footer li {
+    display: flex;
+    justify-content: center;
+}
+
+footer li a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+/* DERECHOS RESERVADOS */
+
+footer section.rigths {
+    background-color: black;
+    color: silver;
+    padding: 20px 0px;
+}
+
+footer section.rigths h5 {
+    margin: 0;
+    text-align: center;
+}
+
+/*Media Query*/
+
+@media (max-width: 750px) {
+
+    /* HEADER */
+    .parent.menu-option {
+        display: none;
+    }
+
+    .header .mobile.navbar {
+        display: block;
+    }
+
+    .header h1 {
+        margin: 0px;
+        margin-left: 12px;
+    }
+
+    .header .search input {
+        width: 150px;
+    }
+
+    .header .search button {
+        margin: 0px;
+    }
+
+    /* UNA COLUMNA */
+
+    .products.one-column .product {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+        height: unset;
+    }
+
+    .products.one-column .product .left,
+    .products.one-column .product .right {
+        width: 100%;
+    }
+
+    .products.one-column .product .right {
+        padding: 20px;
+    }
+
+    /* DOS COLUMNAS */
+
+    .products.two-column {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .products.two-column .product {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+        height: unset;
+        width: unset;
+    }
+
+    .products.two-column .product .top,
+    .products.two-column .product .bottom {
+        width: 100%;
+    }
+
+    .products.two-column .product .top img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .products.two-column .product .bottom {
+        height: unset;
+        padding: 20px;
+    }
+
+    /* THREE COLUMNAS */
+
+    .products.three-column {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .products.three-column .product {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+        height: unset;
+        width: unset;
+    }
+
+    .products.three-column .product .top,
+    .products.three-column .product .bottom {
+        width: 100%;
+    }
+
+    .products.three-column .product .top img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .products.three-column .product .bottom {
+        height: unset;
+        padding: 20px;
+    }
+
+    /* TRES FILAS */
+
+    .products.three-lines {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .products.three-lines .product {
+        display: flex;
+        flex-direction: column;
+        width: unset;
+        margin: 20px 40px;
+    }
+
+    .products.three-lines .product .top img {
+        height: 300px;
+        width: 100%;
+    }
+
+    /* TRES COLUMNAS FINAL */
+
+    footer .main-container {
+        height: unset;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    footer article {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* DERECHOS RESERVADOS */
+
+    footer section.rigths {
+        padding: 30px 0px;
+    }
+
+}
+
+/** Reescribir colores */
+
+/** Productos */
